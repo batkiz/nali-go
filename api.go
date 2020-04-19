@@ -37,6 +37,11 @@ func getIpInfo(ip, lang string) {
 	url := fmt.Sprintf("http://ip-api.com/json/%v?lang=%v", ip, lang)
 
 	resp, err := http.Get(url)
+	if err != nil {
+		println("error occurred")
+		os.Exit(2)
+	}
+
 	defer resp.Body.Close()
 
 	if resp.Header.Get("X-Rl") == "0" {

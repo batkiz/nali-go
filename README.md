@@ -26,5 +26,6 @@ use `--lang/-l` to switch languages, e.g. `nali -l en example.com`
 
 **ATTENTION**: make sure set the flags before the ip/domain.
 
-# LICENSE
+## LICENSE
+
 GPL-3.0-or-later 
